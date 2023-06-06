@@ -1,8 +1,6 @@
-const calculadora = require("./calculadora");
+const app = require('./server');
 
-console.log(calculadora.div(5,2));
-console.log(calculadora.mult(5,2));
-console.log(calculadora.sub(5,2));
-console.log(calculadora.sum(5,2));
-console.log(calculadora.par(2));
-console.log(calculadora.par(5));
+const port = 8070;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
